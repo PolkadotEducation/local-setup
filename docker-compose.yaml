@@ -14,7 +14,7 @@ services:
     volumes:
       - ./codebase/api:/usr/api
     env_file:
-      - path: ./environments/.api
+      - ./environments/.api
     command: >
       bash -c "cd /usr/api &&
         yarn &&
