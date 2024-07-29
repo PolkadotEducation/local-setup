@@ -39,20 +39,22 @@ services:
     networks:
       - doteducation-network
 
-  doteducation-lp:
+  doteducation-landing-page:
     image: node:20.12
     ports:
       - 3001:3001
     volumes:
-      - ./codebase/lp:/usr/lp
+      - ./codebase/landing-page:/usr/landing-page
     command: >
-      bash -c "cd /usr/lp &&
+      bash -c "cd /usr/landing-page &&
         yarn &&
         yarn dev"
     depends_on:
       - doteducation-app
     networks:
       - doteducation-network
+    profiles:
+      - optional
 
 networks:
   doteducation-network:

@@ -2,7 +2,7 @@
 
 BRANCH_NAME=${1:-main}
 CODEBASE_DIR="codebase"
-REPOSITORIES=("api" "app" "lp")
+REPOSITORIES=("api" "app" "landing-page")
 
 if [ ! -d ${CODEBASE_DIR} ]; then
   mkdir ${CODEBASE_DIR}
