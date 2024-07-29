@@ -16,6 +16,11 @@ cd local-setup
 docker compose up
 ```
 
+This command spins up the mongodb instance, the api and the frontend. To also run the landing page, use:
+```
+docker compose up --profile optional up
+```
+
 ### 4 - Shutdown Docker compose
 ```
 docker compose down
