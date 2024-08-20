@@ -30,6 +30,8 @@ services:
       - 3000:3000
     volumes:
       - ./codebase/app:/usr/app
+    env_file:
+      - ./environments/.app
     command: >
       bash -c "cd /usr/app &&
         yarn &&
