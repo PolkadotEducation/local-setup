@@ -4,7 +4,7 @@
 
 Polkadot Education is a mobile-first responsive web app designed to provide comprehensive blockchain and Web3 education tailored for enterprises and institutions. Our goal is to guide users from the basics to advanced knowledge of Polkadot through an engaging and practical learning journey.
 
-[Website](https://polkadot.education) · [Contact](mailto:contact@polkadot.education)
+[Website](https://polkadot.education) · [Support](mailto:support@polkadot.education)
 
 ---
 
@@ -72,4 +72,4 @@ If you have suggestions, improvements, or bug fixes, please submit a pull reques
 - landing-page: https://github.com/PolkadotEducation/landing-page/issues
 
 # Contact
-For any questions or support, please contact us at [contact@polkadot.education](mailto:contact@polkadot.education)
+For any questions or support, please contact us at [support@polkadot.education](mailto:support@polkadot.education)
