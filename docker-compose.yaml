@@ -16,6 +16,7 @@ services:
       - 4000:4000
     volumes:
       - ./codebase/api:/usr/api
+      - /usr/api/node_modules
     env_file:
       - ./environments/.api
     command: >

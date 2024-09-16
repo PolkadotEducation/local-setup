@@ -46,9 +46,14 @@ docker compose --profile slim up
 ```
 
 ### 4. Shutdown Docker Compose
-To stop all containers, networks, and volumes created by Docker Compose, run:
+To stop and remove all containers, networks, and volumes (both named & anonymous) created by Docker Compose, run:
 ```bash
-docker compose down
+docker compose down -v
+```
+
+If you want to remove only the anonymous volumes, stop the containers and run:
+```bash
+docker-compose rm -vf
 ```
 
 ### 5. (Optional) Setup a script to start working
