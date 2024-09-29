@@ -21,7 +21,7 @@ services:
     command: >
       bash -c "cd /usr/api &&
         bun i &&
-        bun dev"
+        bun run nodemon"
     depends_on:
       - doteducation-mongodb
     networks:
