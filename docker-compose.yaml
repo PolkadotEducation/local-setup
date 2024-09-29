@@ -11,7 +11,7 @@ services:
       - slim
 
   doteducation-api:
-    image: node:20.12
+    image: oven/bun:1.1.29
     ports:
       - 4000:4000
     volumes:
@@ -20,8 +20,8 @@ services:
       - ./environments/.api
     command: >
       bash -c "cd /usr/api &&
-        yarn &&
-        yarn dev"
+        bun i &&
+        bun dev"
     depends_on:
       - doteducation-mongodb
     networks:
@@ -31,7 +31,7 @@ services:
       - slim
 
   doteducation-app:
-    image: node:20.12
+    image: oven/bun:1.1.29
     ports:
       - 3000:3000
     volumes:
@@ -40,8 +40,8 @@ services:
       - ./environments/.app
     command: >
       bash -c "cd /usr/app &&
-        yarn &&
-        yarn dev"
+        bun i &&
+        bun dev"
     depends_on:
       - doteducation-api
     networks:
@@ -51,15 +51,15 @@ services:
       - slim
 
   doteducation-landing-page:
-    image: node:20.12
+    image: oven/bun:1.1.29
     ports:
       - 3001:3001
     volumes:
       - ./codebase/landing-page:/usr/landing-page
     command: >
       bash -c "cd /usr/landing-page &&
-        yarn &&
-        PORT=3001 yarn dev"
+        bun i &&
+        PORT=3001 bun dev"
     networks:
       - doteducation-network
     profiles:
