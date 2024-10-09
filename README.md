@@ -63,6 +63,13 @@ Start working in your desired repository (choose between `api`, `app`, `landing-
 ./work.sh <repository>
 ```
 
+Pull all the recent changes from the codebase:
+```bash
+./pull.sh
+```
+
+Ps.: run `chmod +x <script.sh>` if you're having `permission denied` issues
+
 # Contributing
 We welcome contributions to the Polkadot Education project!
 
